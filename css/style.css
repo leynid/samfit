@@ -459,6 +459,58 @@ footer {
 /* Ofertas Page*/
 
 /* Nosotros Page*/
+.about-us {
+  display: flex;
+  height: 500px;
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+
+.parrafo-2 {
+  color:#1746a2;
+}
+
+.article-e {
+  width: 25em;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.article-f {
+  width: 25em;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.article-g {
+  width: 25em;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
 
 /* Contacto Page*/
 
@@ -581,7 +633,7 @@ footer {
 
   .redes li {
     display: inline-block;
-    margin: 5px 5px;
+    margin: 10px 10px;
   }
 
   .preguntas,
@@ -624,4 +676,12 @@ footer {
     margin-top: 45px;
     left: -100%;
   }
+
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 12px;
+  }
+
 }
