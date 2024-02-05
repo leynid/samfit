@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PRODUCTOS</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container"><img class="img-logo" src="../img/samfitLogo.png" alt="logo"></div>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-link">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-4 card-container">
+
+            <section class="menu-bar d-flex justify-content-between align-items-center">
+
+                <!-- Botón y Menú -->
+                <div class="d-flex col-6 col-md-3">
+                    <button class="btn-lg" for=""><i class="bi bi-sliders"></i></button>
+                    <nav class="sidebar">
+                        <div class="type-product">Categorias</div>
+                        <ul class="category_list">
+                            <li class="category_item" category="all"><a href="#" id="1">Todo</a></li>
+                            <li class="category_item" category="calzas"><a href="#" id="1">Calzas</a></li>
+                            <li class="category_item" category="musculosas"><a href="#" id="1">Musculosas</a></li>
+                            <li class="category_item" category="polleras"><a href="#" id="1">Polleras</a></li>
+                            <li class="category_item" category="accesorios"><a href="#" id="1">Accesorios</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="content">
+                    <div class="header"></div>
+                </div>
+
+                <!-- List Order -->
+                <div class="d-flex col-6 col-md-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for=""><i class="bi bi-arrow-down-up"></i></label>
+                        <select class="form-select sort-by" aria-label="Filter select">
+                            <option selected disabled>Ordenar por:</option>
+                            <option value="price-ascending">Precio: Menor a Mayor</option>
+                            <option value="price-descending">Precio: Mayor a Menor</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section id="product1" class="section-p1">
+                <div class="row product_list">
+                    <!-- Card-Products -->
+                    <!-- Calzas -->
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="19300" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M023 CALZA LARGA LISA NEGRO 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M023-1</p>
+                                            <p>CALZA BASICA LARGA LISA NEGRA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$15.440</span>
+                                            <small class="old-price text-right">$19.300</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="19300" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M023 CALZA LARGA LISA GRIS 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M023-2</p>
+                                            <p>CALZA BASICA LARGA LISA GRIS</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$15.440</span>
+                                            <small class="old-price text-right">$19.300</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="26500" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M021 CALZA LARGA ESTAMPADO SUR 1.1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M021-1</p>
+                                            <p>CALZA LARGA ESTAMPADA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$21.200</span>
+                                            <small class="old-price text-right">$26.500</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="26500" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M021 CALZA LARGA ESTAMPADO SUR 2.1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M021-2</p>
+                                            <p>CALZA LARGA ESTAMPADA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$21.200</span>
+                                            <small class="old-price text-right">$26.500</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="26500" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M021 CALZA LARGA ESTAMPADO SUR 3.1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M021-3</p>
+                                            <p>CALZA LARGA ESTAMPADA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$21.200</span>
+                                            <small class="old-price text-right">$26.500</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="21300" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M032 CALZA LARGA ESTAMPADO 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M032-1</p>
+                                            <p>CALZA LARGA ESTAMPADO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$21.300</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="35100" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M107 CALZA LARGA LEOPARDO LEOPARDO 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M107-1</p>
+                                            <p>CALZA LARGA LEOPARDO ROSA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$35.100</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
+                                            Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="27600" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M105 CALZA DEGRADADO AZUL 3.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M105-1</p>
+                                            <p>CALZA PUSH UP DEGRADADO AZUL</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$27.600</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calzas">
+                            <div class="card w-auto product-card" data-price="27600" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M105 CALZA DEGRADADO ROSA 2.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M105-2</p>
+                                            <p>CALZA PUSH UP DEGRADADO ROSA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$27.600</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calza">
+                            <div class="card w-auto product-card" data-price="27600" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M105 CALZA DEGRADADO VIOLETA 4.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M105-3</p>
+                                            <p>CALZA PUSH UP DEGRADADO VIOLETA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$27.600</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calza">
+                            <div class="card w-auto product-card" data-price="27600" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M105 CALZA DEGRADADO VERDE 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M105-4</p>
+                                            <p>CALZA PUSH UP DEGRADADO VERDE</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$27.600</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calza">
+                            <div class="card w-auto product-card" data-price="15900" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M031 CAPRI LISO NEGRO 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M031-1</p>
+                                            <p>CALZA BASICO CAPRI LISO NEGRO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$15.900</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Musculosas -->
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="musculosas">
+                            <div class="card w-auto product-card" data-price="15500" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M062 MUSCULOSA DOMYOS WM FUC 2.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M062-1</p>
+                                            <p>MUSCULOSA DOMYOS FUCSIA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$15.500</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="musculosas">
+                            <div class="card w-auto product-card" data-price="15500" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M062 MUSCULOSA DOMYOS WM NEG 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M062-2</p>
+                                            <p>MUSCULOSA DOMYOS NEGRO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$15.500</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="musculosas">
+                            <div class="card w-auto product-card" data-price="13500" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M055 MUSCULOSA VAPLEX MUJER TURQUESA 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M055-1</p>
+                                            <p>MUSCULOSA VAPLEX TURQUESA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$13.500</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="musculosa">
+                            <div class="card w-auto product-card" data-price="15900" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M108 MUSCULOSA NADADOR GRI 2.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M108-1</p>
+                                            <p>MUSCULOSA NADADOR GRIS</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$15.900</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Polleras -->
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="polleras">
+                            <div class="card w-auto product-card" data-price="19700" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M053 POLLERA CON SHORT ESTAMPADA 2.2.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M053-1</p>
+                                            <p>POLLERA CON SHORT ESTAMPADA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$19.700</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
+                                            Compra</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="polleras">
+                            <div class="card w-auto product-card" data-price="19700" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M053 POLLERA CON SHORT ESTAMPADA 1.1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M053-2</p>
+                                            <p>POLLERA CON SHORT ESTAMPADA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$19.700</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="polleras">
+                            <div class="card w-auto product-card" data-price="19700" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M053 POLLERA CON SHORT ESTAMPADA 3.1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M053-3</p>
+                                            <p>POLLERA CON SHORT ESTAMPADA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$19.700</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="polleras">
+                            <div class="card w-auto product-card" data-price="14100" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M093 POLLERA CON SHORT LISA 2.1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M093-1</p>
+                                            <p>POLLERA CON SHORT LISA NEGRA</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$14.100</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accesorios -->
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="accesorios">
+                            <div class="card w-auto product-card" data-price="8800" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/DE01C TRIPACK SIN CAÑA SURTIDO 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>DE01C</p>
+                                            <p>TRIPACK SIN CAÑA SURTIDO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$8.800</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="accesorios">
+                            <div class="card w-auto product-card" data-price="11700" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/DE224C TRIPACK CAÑA INTERMEDIA SURTIDO.png"
+                                        class="img-fluid rounded thumbnail-image">
+
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>DE224C</p>
+                                            <p>TRIPACK CAÑA INTERMEDIA SURTIDO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$11.700</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="accesorios">
+                            <div class="card w-auto product-card" data-price="25000" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <!-- <span class="discount">-20%</span> -->
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+
+                                    <img src="../img/img-products/U061 MOCHILA QUECHUA 10 LT BOR U.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>U061-1</p>
+                                            <p>MOCHILA QUECHUA 10 LT BORDO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price">$25.000</span>
+                                            <span class="new-price"></span>
+                                            <small class="old-price text-right"></small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100085155483835" target="_blank"><i
+                            class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/samfit.ar/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5491123948728&text&type=phone_number&app_absent=0"
+                        target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="preguntas">
+            <p>Formas de Envio</p>
+            <p>Formas de Pago</p>
+            <p>Donde Encontrarnos</p>
+        </div>
+
+        <div class="terminos">
+            <p>Preguntas Frecuentes</p>
+            <p>Términos y Condiciones</p>
+            <p>Política de Privacidad</p>
+        </div>
+
+        <div class="copyright">
+            <p class="copy">Copyright 2024 - SAMFIT.AR - Todos los derechos reservados
+                <br>
+                Dirección General de Defensa y Protección del Consumidor | Para consultas /o denuncias.
+                <a class="copy botton disclaimer" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
+                    target="_blank">Ingrese
+                    aquí</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPT JS INDEX -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const nav = document.querySelector("#nav");
+        const abrir = document.querySelector("#abrir");
+        const cerrar = document.querySelector("#cerrar");
+
+
+        abrir.addEventListener("click", () => {
+            nav.classList.add("visible");
+            abrir.style.display = "none";
+            cerrar.style.display = "block";
+        })
+
+        cerrar.addEventListener("click", () => {
+            nav.classList.remove("visible");
+            cerrar.style.display = "none";
+            abrir.style.display = "block";
+        })
+
+        abrir.addEventListener("transitionend", () => {
+            if (nav.classList.contains("visible")) {
+                cerrar.style.display = "block";
+            } else {
+                cerrar.style.display = "none";
+            }
+        })
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener el elemento del carousel
+            var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+                interval: 2000, // Cambiar el intervalo de cambio de slide (en milisegundos)
+                keyboard: true,  // Permitir navegación con teclado (true/false)
+                pause: 'hover'   // Pausar el carousel al pasar el mouse sobre él ('hover', false)
+            });
+        });
+    </script>
+
+    <!-- SCRIPT JS PRODUCTS -->
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //Sidebar===========================
+        $(document).ready(function () {
+            $('.btn-lg').click(function () {
+                $(this).toggleClass("click");
+                $('.sidebar').toggleClass("show");
+            });
+
+            $('.category_item').click(function () {
+                var catProduct = $(this).attr('category');
+                console.log(catProduct);
+
+                //Agrega Active al seleccionado==========
+                $('.category_item').removeClass("active");
+                $(this).addClass("active");
+
+                //Ocultar===========================
+                $('.product-item').hide();
+
+                //Mostrar===========================
+                $('.product-item[category="' + catProduct + '"]').show();
+
+                // Ocultar el sidebar automáticamente
+                $('.sidebar').removeClass("show");
+            });
+
+            $('.category_item[category="all"]').click(function () {
+                $('.product-item').show();
+            });
+        });
+
+        //List Order===========================
+        $(document).on("change", ".sort-by", function () {
+
+            var sortingMethod = $(this).val();
+
+            if (sortingMethod == 'price-ascending') {
+                sortProductsPriceAscending();
+            } else if (sortingMethod == 'price-descending') {
+                sortProductsPriceDescending();
+            }
+            else {
+                $(".product_list").load(location.href + ".product_list", "");
+            }
+        });
+
+        function sortProductsPriceAscending() {
+            var gridItems = $('.grid-item');
+            gridItems.sort(function (a, b) {
+                return $('.product-card', a).data("price") - $('.product-card', b).data("price");
+            });
+
+            $(".product_list").append(gridItems);
+        }
+
+        function sortProductsPriceDescending() {
+            var gridItems = $('.grid-item');
+            gridItems.sort(function (a, b) {
+                return $('.product-card', b).data("price") - $('.product-card', a).data("price");
+            });
+
+            $(".product_list").append(gridItems);
+        }
+    </script>
+</body>
+</html>
