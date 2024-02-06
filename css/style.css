@@ -468,7 +468,7 @@ footer {
 }
 
 .parrafo-2 {
-  color:#1746a2;
+  color: #1746a2;
 }
 
 .article-e {
@@ -511,8 +511,44 @@ footer {
   margin-right: 3px;
 }
 
-
 /* Contacto Page*/
+.contactanos,
+.nuestra-ubicacion {
+  margin: 1rem;
+}
+
+/* Contactanos - Formato del titulo */
+.contactanos h1 {
+  font-size: 30px;
+  text-align: justify;
+  color: #1746a2;
+  font-weight: bold;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Nuestra Ubicacion - Formato del titulo */
+.nuestra-ubicacion h1 {
+  font-size: 30px;
+  text-align: justify;
+  color: #1746a2;
+  font-weight: bold;
+}
+
+.info-ubicacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-ubicacion li {
+  list-style: none;
+}
+
+.info-ubicacion li i {
+  font-size: 24px;
+  margin-right: 10px;
+}
 
 /* Media query para PC*/
 @media screen and (min-width: 768px) {
@@ -686,5 +722,4 @@ footer {
     justify-content: space-evenly;
     font-size: 12px;
   }
-
 }

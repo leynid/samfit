@@ -30,14 +30,85 @@
     </header>
 
     <main>
-        <section class="section-a">
-            <h1>SAMFIT.AR</h1>
-            <h2><em>Sé la mejor versión de tí</em></h2>
-        </section>
+        <section class="contactanos">
+            <h1>Contactanos</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="input-name" class="form-label">Nombre Completo*</label>
+                    <input type="text" class="form-control" id="input-name" name="nombre" placeholder="">
+                </div>
 
-        <section class="section-b">
-            <p>Página en Construccion
-            </p>
+                <div class="container-fluid mt-4">
+                    <div class="row justify-content-between">
+                        <!-- Grupo para el Email -->
+                        <div class="col-md-4 mb-3">
+                            <label for="input-email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="input-email" name="email"
+                                placeholder="name@example.com">
+                        </div>
+                        <!-- Grupo para el Teléfono -->
+                        <div class="col-md-4 mb-3">
+                            <label for="input-telefono" class="form-label">Telefono *</label>
+                            <input type="text" class="form-control" id="input-telefono" name="telefono" placeholder="">
+                        </div>
+                        <!-- Grupo para la Provincia -->
+                        <div class="col-md-4 mb-3">
+                            <label for="input-state" class="form-label">Provincia</label>
+                            <input type="text" class="form-control" id="input-state" name="state" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Textarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Deseo recibir información de sus productos y
+                        promociones</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+
+
+
+        </section>
+        <br>
+        <br>
+        <section class="nuestra-ubicacion">
+            <h1>Nuestra Ubicación</h1>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Columna Izquierda: Nuestra Ubicación -->
+                    <div class="col-md-6">
+                        <div class="nuestra-ubicacion">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2844677690955!2d-58.39132112514703!3d-34.5969675571402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbd2265d4061%3A0x164ab6815e9a7bcd!2sSAMFIT.AR!5e0!3m2!1ses!2sar!4v1707179234173!5m2!1ses!2sar"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Info-Ubicación -->
+                    <div class="col-md-6">
+                        <div class="info-ubicacion">
+                            <ul>
+                                <li><span class="direccion"><i class="bi bi-geo-alt-fill"></i></span>Marcelo T. de
+                                    Alvear 1529, C1014 CABA</li>
+                                <li><span class="email"><i class="bi bi-envelope-fill"></i></span>samfit.ar@gmail.com
+                                </li>
+                                <li><span class="email"><i class="bi bi-telephone-fill"></i></span>+54 9 11 7363-3632
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
