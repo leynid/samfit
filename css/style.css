@@ -27,7 +27,6 @@ header {
 
 /* Formato del nav.bar */
 .nav {
-  display: flex;
   justify-content: flex-end;
   display: none; /* Inicialmente oculto en dispositivos pequeños */
 }
@@ -49,7 +48,7 @@ header {
 }
 
 .nav-link li a:hover {
-  color: #fff7e9;
+  color: black;
 }
 
 /* Index*/
@@ -138,67 +137,41 @@ header {
   font-size: 20px;
 }
 
-.article-a {
+.article {
   width: 25em;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.article-a {
   background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)),
     url("../img/img1.png");
   background-repeat: no-repeat;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 .article-b {
-  width: 25em;
   background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)),
     url("../img/img2.png");
   background-repeat: no-repeat;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
 }
+
 .article-c {
-  width: 25em;
   background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)),
     url("../img/img3.png");
   background-repeat: no-repeat;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 .article-d {
-  width: 25em;
   background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)),
     url("../img/img4.png");
   background-repeat: no-repeat;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 .parrafo {
@@ -232,8 +205,7 @@ header {
 footer {
   background-color: #1746a2;
   display: flex;
-  margin-top: 20px;
-  padding-top: 1em;
+  margin-top: 15px;
   justify-content: space-around;
   color: #fff7e9;
   flex-wrap: wrap;
@@ -461,44 +433,16 @@ footer {
 /* Nosotros Page*/
 .about-us {
   display: flex;
-  height: 500px;
+  height: 300px;
   text-align: center;
   justify-content: space-evenly;
   font-size: 1rem;
 }
 
-.parrafo-2 {
-  color: #1746a2;
-}
-
-.article-e {
-  width: 25em;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-
-.article-f {
-  width: 25em;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-
+.article-e,
+.article-f,
 .article-g {
-  width: 25em;
+  width: 20em;
   background-repeat: no-repeat;
   border-radius: 5px;
   background-size: cover;
@@ -509,6 +453,15 @@ footer {
   justify-content: center;
   margin-left: 3px;
   margin-right: 3px;
+}
+
+.parrafo-2 {
+  font-size: 30px;
+  text-align: center;
+  color: #1746a2;
+  font-weight: bold;
+  padding-top: 1em;
+  margin-bottom: 1rem;
 }
 
 /* Contacto Page*/
@@ -525,6 +478,16 @@ footer {
   font-weight: bold;
   padding-top: 1em;
   margin-bottom: 1em;
+}
+
+.contactanos .container-fluid .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.contactanos .container-fluid .col-md-12 {
+  padding-right: 1px;
+  padding-left: 1px;
 }
 
 /* Nuestra Ubicacion - Formato del titulo */
@@ -637,21 +600,26 @@ footer {
     display: none;
   }
 
-  .section-c {
+  .section-c,
+  .about-us {
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: 15px;
+    max-height: calc(100vh - 100px);
   }
 
   .article-a,
   .article-b,
   .article-c,
-  .article-d {
-    width: calc(
-      50% - 4px
-    ); /* Calcula el ancho para que haya dos elementos por línea con márgenes */
-    margin: 2px;
+  .article-d,
+  .article-e,
+  .article-f,
+  .article-g {
+    width: calc(100% - 20px); /* Ancho casi completo con márgenes */
+    margin: 10px; /* Márgenes más amplios */
+    height: 150px; /* Altura más grande para los artículos */
   }
 
   .redes {
@@ -714,12 +682,5 @@ footer {
     width: 100%;
     margin-top: 45px;
     left: -100%;
-  }
-
-  .about-us {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-size: 12px;
   }
 }

@@ -31,8 +31,8 @@
 
     <main>
         <section class="contactanos">
-            <h1>Contactanos</h1>
-            <form>
+            <h1>Contáctanos</h1>
+            <form id="contact-form">
                 <div class="mb-3">
                     <label for="input-name" class="form-label">Nombre Completo*</label>
                     <input type="text" class="form-control" id="input-name" name="nombre" placeholder="">
@@ -41,18 +41,18 @@
                 <div class="container-fluid mt-4">
                     <div class="row justify-content-between">
                         <!-- Grupo para el Email -->
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label for="input-email" class="form-label">Email *</label>
                             <input type="email" class="form-control" id="input-email" name="email"
                                 placeholder="name@example.com">
                         </div>
                         <!-- Grupo para el Teléfono -->
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label for="input-telefono" class="form-label">Telefono *</label>
                             <input type="text" class="form-control" id="input-telefono" name="telefono" placeholder="">
                         </div>
                         <!-- Grupo para la Provincia -->
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label for="input-state" class="form-label">Provincia</label>
                             <input type="text" class="form-control" id="input-state" name="state" placeholder="">
                         </div>
@@ -71,9 +71,6 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-
-
-
 
         </section>
         <br>
@@ -189,6 +186,72 @@
             });
         });
     </script>
+
+<!-- SCRIPT JS FORM VALIDATION-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (validateForm()) {
+                alert('Formulario enviado correctamente.');
+                form.reset(); // Opcional: limpia el formulario después de enviarlo
+            }
+        });
+
+        function validateForm() {
+            const nombre = document.getElementById('input-name').value.trim();
+            const email = document.getElementById('input-email').value.trim();
+            const telefono = document.getElementById('input-telefono').value.trim();
+
+            if (nombre === '') {
+                alert('Por favor, ingresa tu nombre completo.');
+                return false;
+            } else if (!isValidFullName(nombre)) {
+                alert('Por favor, ingresa un nombre completo en el formato "Nombre Apellido".');
+                return false;
+            }
+
+            if (email === '') {
+                alert('Por favor, ingresa tu dirección de correo electrónico.');
+                return false;
+            } else if (!isValidEmail(email)) {
+                alert('Por favor, ingresa una dirección de correo electrónico válida.');
+                return false;
+            }
+
+            if (telefono === '') {
+                alert('Por favor, ingresa tu número de teléfono.');
+                return false;
+            } else if (!isValidPhoneNumber(telefono)) {
+                alert('Por favor, ingresa un número de teléfono válido de Argentina.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function isValidFullName(name) {
+            // Validar que el nombre tenga al menos dos palabras
+            const words = name.split(' ');
+            return words.length >= 2;
+        }
+
+        function isValidPhoneNumber(phone) {
+            // Validar el formato del número de teléfono de Argentina
+            const phoneRegex = /^(?:(?:\+?54|0)(?:11|2\d|3(?:0|1|2|3|4|5|6|7|8|9)|6\d|8(?:0|1|2|3|4|5|6|7|8|9))?)? ?9?\d{2} ?\d{4}-?\d{4}$/;
+            return phoneRegex.test(phone);
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    });
+</script>
+
     </footer>
 </body>
 
