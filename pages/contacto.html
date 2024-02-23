@@ -110,7 +110,6 @@
     </main>
 
     <footer class="footer">
-
         <div class="redes">
             <ul>
                 <li><a href="https://www.facebook.com/profile.php?id=100085155483835" target="_blank"><i
@@ -123,16 +122,269 @@
         </div>
 
         <div class="preguntas">
-            <p>Formas de Envio</p>
-            <p>Formas de Pago</p>
-            <p>Donde Encontrarnos</p>
+            <div class="preguntas" onclick="openModal('modal-envios')">
+                <p>Envío y Entrega</p>
+            </div>
+
+            <div class="preguntas" onclick="openModal('modal-pago')">
+                <p>Formas de Pago</p>
+            </div>
+
+            <div class="preguntas" onclick="openModal('modal-cambios')">
+                <p>Cambios</p>
+            </div>
+        </div>
+
+        <!-- Modales Preguntas-->
+        <div class="modal" id="modal-envios">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-envios')">&times;</span>
+                <h2>Envío y Entrega</h2>
+                <h4>Envío a Domicilio Estándar</h4>
+                <p>A todo el país en compras mayores a $79.999 el envío es GRATIS. En compras menores a $79.999 el
+                    envío tiene costo.</p>
+                <p>El plazo de entrega de los envíos estándar es de 3 a 12 días hábiles, dependiendo de la localidad.
+                </p>
+
+                <h4>Retiro en Sucursal de Correo</h4>
+                <p>Podés retirar tu compra en las sucursales de Correo Argentino. Para ver las opciones disponibles
+                    ingresá tu código postal en la página del producto.</p>
+                <p>El plazo de entrega de los envíos estándar es de 3 a 12 días hábiles, dependiendo de la localidad.
+                    El pedido permanecerá en la sucursal durante 5 días corridos. Superando este plazo el paquete
+                    ingresará en devolución a SAMFIT.</p>
+
+                <h4>Envío a Domicilio Express</h4>
+                <p>Modalidad de envío válida únicamente para CABA y GBA en productos seleccionados.</p>
+                <p>Los envíos pueden demorar hasta 48hs hábiles, dependiendo del horario de la compra y del código
+                    postal.</p>
+
+                <h4>Retiro en Nuestra Tienda</h4>
+                <p>Podés retirar tu compra en nuestras tienda, sin costo.
+                    Serás notificado vía email cuando el pedido esté disponible para retirar.</p>
+                <p>El comprador registrado en www.samfit.com deberá concurrir con DNI y número de pedido, dentro de los
+                    30 días corridos a partir de la notificación de retiro.</p>
+                <p> Superado ese lapso el pedido ingresa en devolución a SAMFIT.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-pago">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-pago')">&times;</span>
+                <h2>Formas de Pago</h2>
+                <p>Aceptamos una variedad de métodos de pago seguros para tu comodidad, incluidas:
+                <ul>
+                    <li>Efectivo o transferencia, 15% de descuento sobre el valor total.</li>
+                    <li>Tarjeta de crédito, hasta 3 (tres) cuotas sin interés.</li>
+                    <li>Mercadopago, escaneando el QR que encontrarás en nuestros locales pudiendo abonar con tarjetas
+                        vinculadas en tu cuenta, utilizando hasta dos tarjetas, o dinero en cuenta.</li>
+                    <li>Cuenta DNI Banco Provincia, 30% de descuento los dias Miércoles y Jueves hasta un tope de $3.000
+                        por semana por persona.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-cambios">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-cambios')">&times;</span>
+                <h2>Cambios </h2>
+                <h4>Etiquetas y Embalaje:</h4>
+                <p>Los productos deberán ser devueltos en perfectas condiciones, sin uso, con sus envases y etiquetas
+                    originales. Caso contrario serán rechazados.</p>
+
+                <h4>Plazo de Cambio:</h4>
+                <p>En caso de tratarse de cambio de talle, modelo o producto, usted dispone de 15 (quince) días corridos
+                    a partir de la fecha de recepción del producto para realizarlo.</p>
+
+                <h4>Productos en Oferta / Eventos Especiales de Descuentos:</h4>
+                <p>Los productos adquiridos durante eventos especiales de descuentos se podrán cambiar por el mismo
+                    modelo y mismo color sin abonar diferencia (sujeto a disponibilidad), en cualquier otro caso se
+                    respetará
+                    el precio final abonado en la factura (excluyendo el costo del envío) y el cliente abonará la
+                    diferencia.</p>
+            </div>
         </div>
 
         <div class="terminos">
-            <p>Preguntas Frecuentes</p>
-            <p>Términos y Condiciones</p>
-            <p>Política de Privacidad</p>
+            <div class="terminos" onclick="openModal('modal-faq')">
+                <p>Preguntas Frecuentes</p>
+            </div>
+
+            <div class="terminos" onclick="openModal('modal-terminos')">
+                <p>Términos y Condiciones</p>
+            </div>
+
+            <div class="terminos" onclick="openModal('modal-politica')">
+                <p>Política de Privacidad</p>
+            </div>
         </div>
+
+        <!-- Modales Terminos-->
+        <div class="modal" id="modal-faq">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-faq')">&times;</span>
+                <h2>Preguntas Frecuentes</h2>
+                <h4>¿El precio en el e-shop es el mismo que en el local?</h4>
+                <p>Sí. Los precios en nuestra tienda física y en el e-shop son los mismos.</p>
+
+                <h4>¿Entregan factura “A”?</h4>
+                <p>Unicamente estamos habilitados para entregar factura "C" (Monotributista). Para personalizar tu
+                    factura
+                    tenés que solicitarlo a samfit.ar@gmail.com, o por WhatsApp al (+54) 9 11-2394-8728 antes de
+                    realizar el
+                    pago, dejando la indicación en el sector de “comentarios”.</p>
+
+                <h4>¿Qué costo de financiación tienen las tarjetas?</h4>
+                <p>Actualmente, ofrecemos 3 cuotas sin interés con tarjetas emitidas por entidades bancarias. En caso de
+                    que prefieras abonar en mayor cantidad de cuotas, consúltanos antes de finalizar la compra.</p>
+
+                <h4>¿Hay algún límite de compra?</h4>
+                <p>El único límite de compra que tenemos es el stock disponible de nuestro e-shop.</p>
+
+            </div>
+        </div>
+
+        <div class="modal" id="modal-terminos">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-terminos')">&times;</span>
+                <h2>Términos y Condiciones</h2>
+                <h4>Información General</h4>
+                <p>Este sitio web es operado por Samfit.</p>
+                <p>Samfit ofrece este sitio web, incluyendo toda la información, herramientas y servicios disponibles
+                    para usted en este sitio. El usuario está condicionado a la aceptación de todos los términos,
+                    condiciones, políticas y notificaciones aquí establecidos.</p>
+                <p>Por favor, lee cuidadosamente antes de acceder o utilizar nuestro sitio web. Al acceder o utilizar
+                    cualquier parte del sitio, estás aceptando los Términos de Servicio. Si no estás de acuerdo con
+                    todos los términos y condiciones de este acuerdo, entonces no deberías acceder a la página web o
+                    usar cualquiera de los servicios.</p>
+                <p>Nos reservamos el derecho de actualizar, cambiar o reemplazar cualquier parte de los Términos de
+                    Servicio mediante la publicación de actualizaciones y/o cambios en nuestro sitio web. Es tu
+                    responsabilidad chequear esta página periódicamente para verificar cambios.
+                    Nuestra tienda se encuentra alojada en WooCommerce. Ellos nos proporcionan la plataforma de comercio
+                    electrónico en línea, que nos permite venderte nuestros productos y servicios.</p>
+
+                <h4>Términos de la Tienda Online</h4>
+                <p> Al utilizar este sitio, declaras que tienes al menos la mayoría de edad en tu estado o provincia de
+                    residencia, o que tienes la mayoría de edad en tu estado o provincia de residencia y que nos has
+                    dado tu consentimiento para permitir que cualquiera de tus dependientes menores use este sitio.
+                    No puedes usar nuestros productos con ningún propósito ilegal o no autorizado así como tampoco las
+                    imágenes que se encuentran en esta página Web sin el permiso o autorización de Samfit.
+                    No debes transmitir gusanos, virus o cualquier código de naturaleza destructiva.</p>
+                <p>El incumplimiento o violación de cualquiera de estos Términos darán lugar al cese inmediato de tus
+                    Servicios.</p>
+
+                <h4>Condiciones Generales</h4>
+                <p>Nos reservamos el derecho de rechazar la prestación de servicio a cualquier persona, por cualquier
+                    motivo y en cualquier momento.</p>
+                <p>Entiendes que tu contenido (sin incluir la información de tu tarjeta de crédito), puede ser
+                    transferida sin encriptar e involucrar (a) transmisiones a través de varias redes; y (b) cambios
+                    para ajustarse o adaptarse a los requisitos técnicos de conexión de redes o dispositivos. La
+                    información de tarjetas de crédito está siempre encriptada durante la transferencia a través de las
+                    redes.</p>
+                <p>Estás de acuerdo con no reproducir, duplicar, copiar, vender, revender o explotar cualquier parte
+                    del Servicio, uso del Servicio, o acceso al Servicio o cualquier contacto en el sitio web a través
+                    del cual se presta el servicio, sin el expreso permiso por escrito de nuestra parte.
+                    Los títulos utilizados en este acuerdo se incluyen solo por conveniencia y no limita o afecta a
+                    estos Términos.</p>
+
+                <h4>Exactitud, Exhaustividad y Actualidad de la Información</h4>
+                <p>No nos hacemos responsables si la información disponible en este sitio no es exacta, completa o
+                    actual. El material en este sitio es provisto solo para información general y no debe confiarse en
+                    ella o utilizarse como la única base para la toma de decisiones sin consultar primeramente,
+                    información más precisa, completa u oportuna.</p>
+                <p>Este sitio puede contener cierta información histórica. La información histórica, no es
+                    necesariamente actual y es provista únicamente para tu referencia. Nos reservamos el derecho de
+                    modificar los contenidos de este sitio en cualquier momento, pero no tenemos obligación de
+                    actualizar cualquier información en nuestro sitio. Aceptas que es tu responsabilidad de monitorear
+                    los cambios en nuestro sitio.</p>
+
+                <h4>Modificaciones al Servicio y Precios</h4>
+                <p>Los precios de nuestros productos están sujetos a cambio sin aviso.</p>
+                <p>Nos reservamos el derecho de modificar o discontinuar el Servicio (o cualquier parte del contenido)
+                    en cualquier momento sin aviso previo.</p>
+                <p>No seremos responsables ante usted o alguna tercera parte por cualquier modificación, cambio de
+                    precio, suspensión o discontinuidad del Servicio.</p>
+
+
+                <h4>Productos</h4>
+                <p>Ciertos productos pueden estar disponibles exclusivamente en línea a través del sitio web. Estos
+                    productos pueden tener cantidades limitadas y estar sujetas a devolución o cambio de acuerdo a
+                    nuestra política de devolución solamente.</p>
+                <p>Hemos hecho el esfuerzo de mostrar los colores y las imágenes de nuestros productos, en la tienda,
+                    con la mayor precisión de colores posible. No podemos garantizar que el monitor de tu computadora
+                    muestre los colores de manera exacta.</p>
+                <p>Nos reservamos el derecho, pero no estamos obligados, para limitar las ventas de nuestros productos
+                    o servicios a cualquier persona, región geográfica o jurisdicción. Podemos ejercer este derecho
+                    basados en cada caso. Nos reservamos el derecho de limitar las cantidades de los productos o
+                    servicios que ofrecemos. Todas las descripciones de productos o precios de los productos están
+                    sujetos a cambios en cualquier momento sin previo aviso, a nuestra sola discreción. Nos reservamos
+                    el derecho de discontinuar cualquier producto en cualquier momento.</p>
+                <p>No garantizamos que la calidad de los productos, servicios, información u otro material comprado u
+                    obtenido por ti cumpla con tus expectativas.</p>
+
+                <h4>Exactitud de Facturación e Información de Cuenta</h4>
+                <p>Nos reservamos el derecho de rechazar cualquier pedido que realice con nosotros. Podemos, a nuestra
+                    discreción, limitar o cancelar las cantidades compradas por persona, por hogar o por pedido.</p>
+                <p>En el caso de que hagamos un cambio o cancelemos una orden, podemos intentar notificarte poniéndonos
+                    en contacto vía correo electrónico y/o dirección de facturación / número de teléfono proporcionado
+                    en el momento que se hizo pedido.</p>
+                <p>Te comprometes a proporcionar información actual, completa y precisa de la compra y cuenta utilizada
+                    para todas las compras realizadas en nuestra tienda. Haremos valer nuestro derecho de cancelar una
+                    orden si consideramos que los datos expresados no son suficientes o no son considerados exactos.
+                    Para más detalles, por favor revisa nuestra Política de Devoluciones.</p>
+
+                <h4>Enlaces de Terceras Partes</h4>
+                <p>Cierto contenido, productos y servicios disponibles vía nuestro Servicio puede incluir material de
+                    terceras partes.</p>
+                <p>Enlaces de terceras partes en este sitio pueden direccionarte a sitios web de terceras partes que no
+                    están afiliadas con nosotros. No nos responsabilizamos de examinar o evaluar el contenido o
+                    exactitud y no garantizamos ni tendremos ninguna obligación o responsabilidad por cualquier material
+                    de terceros o sitios web, o de cualquier material, productos o servicios de terceros.</p>
+                <p>No nos hacemos responsables de cualquier daño o daños relacionados con la adquisición o utilización
+                    de bienes, servicios, recursos, contenidos, o cualquier otra transacción realizadas en conexión con
+                    sitios web de terceros. Por favor revisa cuidadosamente las políticas y prácticas de terceros y
+                    asegúrate de entenderlas antes de participar en cualquier transacción. Quejas, reclamos, inquietudes
+                    o preguntas con respecto a productos de terceros deben ser dirigidas a la tercera parte.</p>
+
+                <h4>Información Personal</h4>
+                <p>Tu presentación de información personal a través del sitio se rige por nuestra Política de
+                    Privacidad. Para ver nuestra Política de Privacidad.</p>
+
+                <h4>Errores, Inexactitudes y Omisiones</h4>
+                <p>De vez en cuando puede haber información en nuestro sitio o en el Servicio que contiene errores
+                    tipográficos, inexactitudes u omisiones que puedan estar relacionadas con las descripciones de
+                    productos, precios, promociones, ofertas, gastos de envío del producto, el tiempo de tránsito y la
+                    disponibilidad. Nos reservamos el derecho de corregir los errores, inexactitudes u omisiones y de
+                    cambiar o actualizar la información o cancelar pedidos si alguna información en el Servicio o en
+                    cualquier sitio web relacionado es inexacta en cualquier momento sin previo aviso (incluso después
+                    de que hayas enviado tu orden).</p>
+
+                <h4>Información de Contacto</h4>
+                <p>Preguntas acerca de los Términos de Servicio deben ser enviadas a samfit.ar@gmail.com.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-politica">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-politica')">&times;</span>
+                <h2>Política de Privacidad</h2>
+                <p>Para una excelente atención y para garantizarte una experiencia perfecta de compra, nosotros nos
+                    preocupamos por todos los detalles de venta. En este sentido, contamos con las herramientas y
+                    procedimientos necesarios para brindarte una máxima seguridad y privacidad a la hora de realizar una
+                    transacción en nuestra tienda.</p>
+
+                <p>TUS DATOS PERSONALES DE PAGO Y DE COMPRA ESTÁN ABSOLUTAMENTE PROTEGIDOS Y BAJO NINGÚN CONCEPTO SERÁN
+                    DIVULGADOS. ESOS DATOS SOLO SERÁN LIBERADOS EN CASO DE ORDEN JUDICIAL.</p>
+
+                <p>Tecnología: En relación con el tráfico de datos, toda transacción de pagos, sea por tarjeta o no,
+                    estará
+                    encriptado con la tecnología SSL (Secure Socket Layer). Esto significa que solo Punto 1 tiene acceso
+                    a esta información. Cuando completás tus datos y nos los envías, ya están encriptados.
+                    Todas las páginas del sitio están habilitadas con P3P, lo que permite un mayor control sobre tus
+                    informaciones personales.</p>
+            </div>
+        </div>
+
 
         <div class="copyright">
             <p class="copy">Copyright 2024 - SAMFIT.AR - Todos los derechos reservados
@@ -143,7 +395,6 @@
                     aquí</a>
             </p>
         </div>
-
     </footer>
 
     <!-- SCRIPT JS INDEX -->
@@ -187,70 +438,85 @@
         });
     </script>
 
-<!-- SCRIPT JS FORM VALIDATION-->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const form = document.getElementById('contact-form');
+    <!-- SCRIPT JS FORM VALIDATION-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contact-form');
 
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-            if (validateForm()) {
-                alert('Formulario enviado correctamente.');
-                form.reset(); // Opcional: limpia el formulario después de enviarlo
+                if (validateForm()) {
+                    alert('Formulario enviado correctamente.');
+                    form.reset(); // Opcional: limpia el formulario después de enviarlo
+                }
+            });
+
+            function validateForm() {
+                const nombre = document.getElementById('input-name').value.trim();
+                const email = document.getElementById('input-email').value.trim();
+                const telefono = document.getElementById('input-telefono').value.trim();
+
+                if (nombre === '') {
+                    alert('Por favor, ingresa tu nombre completo.');
+                    return false;
+                } else if (!isValidFullName(nombre)) {
+                    alert('Por favor, ingresa un nombre completo en el formato "Nombre Apellido".');
+                    return false;
+                }
+
+                if (email === '') {
+                    alert('Por favor, ingresa tu dirección de correo electrónico.');
+                    return false;
+                } else if (!isValidEmail(email)) {
+                    alert('Por favor, ingresa una dirección de correo electrónico válida.');
+                    return false;
+                }
+
+                if (telefono === '') {
+                    alert('Por favor, ingresa tu número de teléfono.');
+                    return false;
+                } else if (!isValidPhoneNumber(telefono)) {
+                    alert('Por favor, ingresa un número de teléfono válido de Argentina.');
+                    return false;
+                }
+
+                return true;
+            }
+
+            function isValidFullName(name) {
+                // Validar que el nombre tenga al menos dos palabras
+                const words = name.split(' ');
+                return words.length >= 2;
+            }
+
+            function isValidPhoneNumber(phone) {
+                // Validar el formato del número de teléfono de Argentina
+                const phoneRegex = /^(?:(?:\+?54|0)(?:11|2\d|3(?:0|1|2|3|4|5|6|7|8|9)|6\d|8(?:0|1|2|3|4|5|6|7|8|9))?)? ?9?\d{2} ?\d{4}-?\d{4}$/;
+                return phoneRegex.test(phone);
+            }
+
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
             }
         });
+    </script>
 
-        function validateForm() {
-            const nombre = document.getElementById('input-name').value.trim();
-            const email = document.getElementById('input-email').value.trim();
-            const telefono = document.getElementById('input-telefono').value.trim();
-
-            if (nombre === '') {
-                alert('Por favor, ingresa tu nombre completo.');
-                return false;
-            } else if (!isValidFullName(nombre)) {
-                alert('Por favor, ingresa un nombre completo en el formato "Nombre Apellido".');
-                return false;
+        <!-- SCRIPT VENTANA EMERGENTE -->
+        <script>
+            // Función para abrir la ventana emergente
+            function openModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.style.display = "block";
             }
-
-            if (email === '') {
-                alert('Por favor, ingresa tu dirección de correo electrónico.');
-                return false;
-            } else if (!isValidEmail(email)) {
-                alert('Por favor, ingresa una dirección de correo electrónico válida.');
-                return false;
+    
+            // Función para cerrar la ventana emergente
+            function closeModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.style.display = "none";
             }
-
-            if (telefono === '') {
-                alert('Por favor, ingresa tu número de teléfono.');
-                return false;
-            } else if (!isValidPhoneNumber(telefono)) {
-                alert('Por favor, ingresa un número de teléfono válido de Argentina.');
-                return false;
-            }
-
-            return true;
-        }
-
-        function isValidFullName(name) {
-            // Validar que el nombre tenga al menos dos palabras
-            const words = name.split(' ');
-            return words.length >= 2;
-        }
-
-        function isValidPhoneNumber(phone) {
-            // Validar el formato del número de teléfono de Argentina
-            const phoneRegex = /^(?:(?:\+?54|0)(?:11|2\d|3(?:0|1|2|3|4|5|6|7|8|9)|6\d|8(?:0|1|2|3|4|5|6|7|8|9))?)? ?9?\d{2} ?\d{4}-?\d{4}$/;
-            return phoneRegex.test(phone);
-        }
-
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-    });
-</script>
+        </script>
 
     </footer>
 </body>
