@@ -230,8 +230,9 @@ footer {
   color: #fff7e9;
 }
 
-/* Footer Preguntas - Formato */
-.terminos {
+/* Footer Preguntas y Terminos - Formato */
+.terminos,
+.preguntas {
   color: hsl(0, 0%, 75%);
   list-style-type: none;
   margin-bottom: 5px;
@@ -239,13 +240,71 @@ footer {
   cursor: pointer;
 }
 
-/* Footer Terminos - Formato */
-.preguntas {
-  color: hsl(0, 0%, 75%);
-  list-style-type: none;
-  margin-bottom: 5px;
-  font-size: 1em;
+.terminos:hover,
+.preguntas:hover {
+  color: #fff7e9;
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #1746a2;
+  color: hsl(0, 0%, 85%);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 90%;
+  max-width: 75%;
+  position: relative;
+}
+.modal-content h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-content h4{
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: medium;
+  color:#fcd900;
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
+}
+
+/* Estilos para el botón de cerrar la ventana emergente */
+.modal-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Footer Copyright - Formato */
@@ -409,6 +468,7 @@ footer {
   color: red;
   text-align: right;
 }
+
 .old-price {
   font-size: 14px;
   font-weight: normal;
@@ -433,35 +493,44 @@ footer {
 /* Nosotros Page*/
 .about-us {
   display: flex;
-  height: 300px;
-  text-align: center;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
   font-size: 1rem;
+  padding: 20px;
 }
 
 .article-e,
 .article-f,
 .article-g {
-  width: 20em;
+  flex: 1; /* Hacer que los artículos se expandan para llenar el espacio disponible */
+  max-width: 300px; /* Establecer un ancho máximo para los artículos */
   background-repeat: no-repeat;
   border-radius: 5px;
   background-size: cover;
+  background-color: hsl(0, 0%, 90%);
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin: 10px; /* Ajustar el margen alrededor de los artículos */
+  padding: 20px; /* Agregar un poco de espacio interno dentro de los artículos */
+  box-sizing: border-box;
 }
 
 .parrafo-2 {
-  font-size: 30px;
+  font-size: 1.5rem; /* Tamaño de fuente más grande para los títulos */
   text-align: center;
   color: #1746a2;
   font-weight: bold;
-  padding-top: 1em;
-  margin-bottom: 1rem;
+  margin-bottom: 10px; /* Reducir el margen inferior para separar los títulos de los párrafos */
+}
+
+.article-e p,
+.article-f p,
+.article-g p {
+  text-align: center; /* Centrar el texto dentro de los párrafos */
 }
 
 /* Contacto Page*/
@@ -600,8 +669,7 @@ footer {
     display: none;
   }
 
-  .section-c,
-  .about-us {
+  .section-c {
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
@@ -610,16 +678,25 @@ footer {
     max-height: calc(100vh - 100px);
   }
 
+  .about-us {
+    flex-direction: column; /* Cambiar la dirección del flexbox a columna en dispositivos más pequeños */
+    align-items: center;
+  }
+
   .article-a,
   .article-b,
   .article-c,
-  .article-d,
-  .article-e,
-  .article-f,
-  .article-g {
+  .article-d {
     width: calc(100% - 20px); /* Ancho casi completo con márgenes */
     margin: 10px; /* Márgenes más amplios */
     height: 150px; /* Altura más grande para los artículos */
+  }
+
+  .article-e,
+  .article-f,
+  .article-g {
+    width: 100%; /* Hacer que los artículos ocupen todo el ancho disponible */
+    margin: 10px 0; /* Agregar margen superior e inferior para separar los artículos */
   }
 
   .redes {
