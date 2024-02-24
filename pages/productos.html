@@ -22,7 +22,7 @@
             <ul class="nav-link">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                <li><a href="../pages/productos.html?category=ofertas">Ofertas</a></li>
                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
@@ -45,9 +45,12 @@
                             <li class="category_item" category="musculosas"><a href="#" id="1">Musculosas</a></li>
                             <li class="category_item" category="polleras"><a href="#" id="1">Polleras</a></li>
                             <li class="category_item" category="accesorios"><a href="#" id="1">Accesorios</a></li>
+                            <li class="category_item" category="talles-especiales"><a href="#" id="1">Talles
+                                    Especiales</a></li>
                         </ul>
                     </nav>
                 </div>
+
                 <div class="content">
                     <div class="header"></div>
                 </div>
@@ -280,14 +283,15 @@
                                 <div class="image-container">
 
                                     <div class="first">
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <!-- <span class="discount">-20%</span> -->
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
                                             <span class="wishlist"><i class="bi bi-heart"></i></span>
                                         </div>
                                     </div>
 
                                     <img src="../img/img-products/M032 CALZA LARGA ESTAMPADO 1.png"
                                         class="img-fluid rounded thumbnail-image">
+
                                 </div>
 
                                 <div class="product-detail-container p-2">
@@ -298,9 +302,9 @@
                                         </h5>
 
                                         <div class="d-flex flex-column mb-2">
-                                            <span class="list-price">$21.300</span>
-                                            <span class="new-price"></span>
-                                            <small class="old-price text-right"></small>
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$17.040</span>
+                                            <small class="old-price text-right">$21.300</small>
                                         </div>
 
                                     </div>
@@ -321,8 +325,8 @@
                                 <div class="image-container">
 
                                     <div class="first">
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <!-- <span class="discount">-20%</span> -->
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
                                             <span class="wishlist"><i class="bi bi-heart"></i></span>
                                         </div>
                                     </div>
@@ -340,15 +344,56 @@
                                         </h5>
 
                                         <div class="d-flex flex-column mb-2">
-                                            <span class="list-price">$35.100</span>
-                                            <span class="new-price"></span>
-                                            <small class="old-price text-right"></small>
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$28.080</span>
+                                            <small class="old-price text-right">$35.100</small>
                                         </div>
                                     </div>
 
                                     <div class="d-flex justify-content-between align-items-center pt-1">
                                         <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
                                             Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                        <div class="product-item" category="calza">
+                            <div class="card w-auto product-card" data-price="15900" style="width: 70%">
+                                <div class="image-container">
+
+                                    <div class="first">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="discount">-20%</span>
+                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <img src="../img/img-products/M031 CAPRI LISO NEGRO 1.png"
+                                        class="img-fluid rounded thumbnail-image">
+                                </div>
+
+                                <div class="product-detail-container p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="product-name">
+                                            <p>M031-1</p>
+                                            <p>CALZA BASICO CAPRI LISO NEGRO</p>
+                                        </h5>
+
+                                        <div class="d-flex flex-column mb-2">
+                                            <span class="list-price"></span>
+                                            <span class="new-price">$12.720</span>
+                                            <small class="old-price text-right">$15.900</small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center pt-1">
+                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
+                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -519,47 +564,6 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
-                        <div class="product-item" category="calza">
-                            <div class="card w-auto product-card" data-price="15900" style="width: 70%">
-                                <div class="image-container">
-
-                                    <div class="first">
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <!-- <span class="discount">-20%</span> -->
-                                            <span class="wishlist"><i class="bi bi-heart"></i></span>
-                                        </div>
-                                    </div>
-
-                                    <img src="../img/img-products/M031 CAPRI LISO NEGRO 1.png"
-                                        class="img-fluid rounded thumbnail-image">
-                                </div>
-
-                                <div class="product-detail-container p-2">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="product-name">
-                                            <p>M031-1</p>
-                                            <p>CALZA BASICO CAPRI LISO NEGRO</p>
-                                        </h5>
-
-                                        <div class="d-flex flex-column mb-2">
-                                            <span class="list-price">$15.900</span>
-                                            <span class="new-price"></span>
-                                            <small class="old-price text-right"></small>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center pt-1">
-                                        <button name="redirect" class="w-100 p-2 d-block custom-btn"
-                                            onclick="redirect()"><i class="bi bi-cart-plus"></i> Comprar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Musculosas -->
                     <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                         <div class="product-item" category="musculosas">
@@ -651,7 +655,7 @@
 
                                     <div class="first">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="discount">-20%</span>
+                                            <!-- <span class="discount">-20%</span> -->
                                             <span class="wishlist"><i class="bi bi-heart"></i></span>
                                         </div>
                                     </div>
@@ -859,7 +863,7 @@
 
                                     <div class="first">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="discount">-20%</span>
+                                            <!-- <span class="discount">-20%</span> -->
                                             <span class="wishlist"><i class="bi bi-heart"></i></span>
                                         </div>
                                     </div>
@@ -1026,6 +1030,10 @@
 
         </div>
     </main>
+
+    <div id="no-products-message" style="display: none; text-align: center; margin-bottom: 500px;">
+        <h2 style="font-size: 24px;">No se encontraron productos en esta categoría.</h2>
+    </div>
 
     <footer class="footer">
         <div class="redes">
@@ -1382,7 +1390,12 @@
                 $('.product-item').hide();
 
                 //Mostrar===========================
-                $('.product-item[category="' + catProduct + '"]').show();
+                var productsToShow = $('.product-item[category="' + catProduct + '"]');
+                if (productsToShow.length === 0) {
+                    $('#no-products-message').show(); // Mostrar mensaje si no se encuentran productos en esta categoría
+                } else {
+                    productsToShow.show();
+                }
 
                 // Ocultar el sidebar automáticamente
                 $('.sidebar').removeClass("show");
@@ -1391,6 +1404,7 @@
             $('.category_item[category="all"]').click(function () {
                 $('.product-item').show();
             });
+
         });
 
         //List Order===========================
@@ -1427,20 +1441,69 @@
         }
     </script>
 
-        <!-- SCRIPT VENTANA EMERGENTE -->
-        <script>
-            // Función para abrir la ventana emergente
-            function openModal(modalId) {
-                var modal = document.getElementById(modalId);
-                modal.style.display = "block";
+    <!-- SCRIPT FILTRO PRODUCTS PARA ARTICLES EN INDEX  -->
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            // Función para obtener el parámetro de la URL
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                var results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            };
+
+            // Obtener el parámetro 'category' de la URL
+            var category = getUrlParameter('category');
+
+            // Filtrar los productos según la categoría
+            if (category === 'all-except-accesorios') {
+                // Mostrar todos los productos excepto los accesorios
+                $('.product-item').hide();
+                $('.product-item[category!="accesorios"]').show();
+            } else if (category === 'accesorios') {
+                // Mostrar solo los productos de la categoría accesorios
+                $('.product-item').hide();
+                $('.product-item[category="accesorios"]').show();
+            } else if (category === 'talles-especiales') {
+                // Mostrar solo los productos de la categoría talles especiales
+                $('.product-item').hide();
+                $('.product-item[category="talles-especiales"]').show();
+            } else if (category === 'ofertas') {
+                // Mostrar solo los productos con descuento activo
+                var productosConDescuento = $('.product-item .discount').closest('.product-item');
+                if (productosConDescuento.length === 0) {
+                    $('#no-products-message').show(); // Mostrar mensaje si no hay productos con descuento
+                } else {
+                    $('.product-item').hide();
+                    productosConDescuento.show();
+                }
+            } else {
+                // Por defecto, mostrar todos los productos
+                $('.product-item').show();
             }
-    
-            // Función para cerrar la ventana emergente
-            function closeModal(modalId) {
-                var modal = document.getElementById(modalId);
-                modal.style.display = "none";
+
+            // Mostrar mensaje si no se encontraron productos en ninguna categoría
+            if ($('.product-item:visible').length === 0) {
+                $('#no-products-message').show();
             }
-        </script>
+        });
+    </script>
+
+
+    <!-- SCRIPT VENTANA EMERGENTE -->
+    <script>
+        // Función para abrir la ventana emergente
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+
+        // Función para cerrar la ventana emergente
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
