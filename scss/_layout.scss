@@ -1,0 +1,312 @@
+// Estilos del Carousel
+
+section-carrusel {
+    text-align: center;
+    max-width: 1800px auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    prevnext {
+        background-color: transparent;
+        border-radius: 50px;
+        margin: 5px;
+    }
+
+    slide {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}
+
+// _section-a.scss
+
+.section-a {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        color: #1746a2;
+        font-weight: bold;
+        padding-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        color: #fb8b24;
+        font-weight: bold;
+    }
+}
+
+// _section-b.scss
+
+.section-b {
+    p {
+        font-size: 18px;
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+// _section-c.scss
+
+.section-c {
+    display: flex;
+    height: 500px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+
+    .article {
+            @extend .article-base;
+            width: 25em;
+            margin: 0 3px;
+
+        &.article-a {
+            background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../img/img1.png");
+            background-repeat: no-repeat;
+        }
+
+        &.article-b {
+            background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../img/img2.png");
+            background-repeat: no-repeat;
+        }
+
+        &.article-c {
+            background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../img/img3.png");
+            background-repeat: no-repeat;
+        }
+
+        &.article-d {
+            background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../img/img4.png");
+            background-repeat: no-repeat;
+        }
+
+        .parrafo {
+            color: #fff7e9;
+        }  
+
+        .img {
+            width: 8em;
+            height: 12em;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    padding: 20px;
+
+    .article-e,
+    .article-f,
+    .article-g {
+        @extend .article-base;
+        background-color: hsl(0, 0%, 90%);
+        flex: 1;
+        max-width: 400px;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .parrafo-2 {
+            font-size: 1.5rem;
+            text-align: center;
+            color: #1746a2;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+// Products Page
+.menu-bar {
+    justify-content: space-between;
+}
+
+// List Order
+.form-select {
+    cursor: pointer;
+    text-align: justify;
+    border-color: none;
+}
+
+// Botón y Menú
+.type-product {
+    background-color: $bg-orange;
+    font-size: 22px;
+    color: #fff7e9;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: -300px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+
+    &.show {
+        left: 0px;
+    }
+
+    .text {
+        color: #fff7e9;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+        background: #1746a2;
+        letter-spacing: 1px;
+    }
+
+    ul {
+        background: #1746a2;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        padding-left: 10px;
+
+        li {
+            line-height: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            a {
+                position: relative;
+                color: #fff7e9;
+                text-decoration: none;
+                font-size: 15px;
+                padding-left: 14px;
+                font-weight: 500;
+                display: block;
+                width: 100%;
+                border-left: 3px solid transparent;
+
+                &.active {
+                    color: #fcd900;
+                    background: #1746a2;
+                    border-left-color: #fcd900;
+                }
+            }
+        }
+    }
+}
+
+// Card Products
+
+.discount {
+    background-color: red;
+    padding: 10px 4px;
+    font-size: 14px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.wishlist {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first {
+    position: absolute;
+    width: 100%;
+    padding: 9px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    width: 75%;
+}
+
+.list-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+
+.new-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    text-align: right;
+}
+
+.old-price {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(167, 165, 165);
+    text-decoration: line-through;
+    text-align: right;
+}
+
+// Contactanos y Nuestra Ubicacion
+.contactanos,
+.nuestra-ubicacion {
+    margin: 1rem;
+
+    h1 {
+        font-size: 30px;
+        text-align: justify;
+        color: #1746a2;
+        font-weight: bold;
+
+        &.contactanos {
+            padding-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    .container-fluid .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .container-fluid .col-md-12 {
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .info-ubicacion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            list-style: none;
+
+            i {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

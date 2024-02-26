@@ -1,0 +1,60 @@
+.btn-lg {
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: left 0.4s ease;
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.custom-btn {
+    border-radius: 20px;
+    background: $bg-orange;
+    border: 1px solid transparent;
+    color: #fff7e9;
+    height: 40px;
+    width: 100vh;
+    font-style: bold;
+    font-size: 16px;
+}
+
+.button {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        background-color: $bg-blue;
+        color: #fff7e9;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $bg-blue;
+        }
+    }
+}
+
+.buttons {
+    background-color: #1746a2;
+    color: #fff7e9;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: normal;
+    border: 0;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        background-color: $bg-black;
+        text-align: center;
+    }
+}

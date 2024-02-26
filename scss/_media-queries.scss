@@ -1,0 +1,219 @@
+// Media query para PC
+@media screen and (min-width: 768px) {
+    header {
+        .abrir-menu,
+        .cerrar-menu {
+            display: none;
+            // Oculta el botón de abrir y cerrar en pantallas grandes //
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 95%;
+        }
+
+        .nav-link {
+            justify-content: flex-end;
+            width: 95%;
+            gap: 15px;
+        }
+    }
+}
+
+// Media query para Responsive
+@media screen and (max-width: 767px) {
+
+    // Para todos los HTML
+    header {
+        .abrir-menu {
+            display: block; // Muestra el botón de abrir en dispositivos pequeños
+        }
+
+        .cerrar-menu {
+            display: none; // Oculta el botón de cerrar inicialmente en dispositivos pequeños
+        }
+
+        .nav.visible {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 120px;
+            left: 0;
+            background-color: white;
+            width: 100%;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .nav-link {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-link li {
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .abrir-menu,
+        .cerrar-menu {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 2rem;
+            color: #fff7e9;
+            position: absolute;
+            text-align: center;
+            right: 10%;
+        }
+    }
+
+    footer {
+        .redes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+
+            li {
+                display: inline-block;
+                margin: 10px 10px;
+            }
+        }
+
+        .preguntas,
+        .terminos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+
+            >div {
+                width: calc(33.33% - 20px);
+                margin: 0 10px;
+                text-align: center;
+            }
+        }
+
+        .copy {
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        .modal-content {
+            margin: 15% 5%;
+            width: 75%;
+            max-width: 75%;
+          }
+        }
+      
+        .modal-content {
+          background-color: $bg-blue;
+          color: hsl(0, 0%, 85%);
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid black;
+          width: 75%;
+          max-width: 75%;
+          position: relative;
+           
+          .modal-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+
+    // Para Index
+    .section-carrusel {
+        position: relative;
+        z-index: 0;
+    }
+
+    .section-a,
+    .section-b {
+        display: none;
+    }
+
+    .section-c {
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 15px;
+        max-height: calc(100vh - 100px);
+
+        .article-a,
+        .article-b,
+        .article-c,
+        .article-d {
+            width: calc(100% - 20px);
+            margin: 10px;
+            height: 150px;
+        }
+    }
+
+    // Para Productos
+    .btn-lg {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        border: none;
+        align-items: center;
+    }
+
+    .input-group {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .form-select {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .type-product {
+        background-color: $bg-orange;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 45px;
+        left: -100%;
+    }
+
+    // Para Nosotros
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+
+        article-e,
+        article-f,
+        article-g {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }  
+}

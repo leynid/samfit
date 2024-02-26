@@ -1,0 +1,116 @@
+// Formato del Footer
+footer {
+  background-color: $bg-blue;
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+  color: #fff7e9;
+  flex-wrap: wrap;
+
+  .redes li {
+    background-color: $bg-blue;
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+    a {
+      color: hsl(0, 0%, 75%);
+
+      &:hover {
+        color: #fff7e9;
+      }
+    }
+
+    &:hover {
+      color: #fff7e9;
+    }
+  }
+
+  .terminos,
+  .preguntas {
+    color: hsl(0, 0%, 75%);
+    font-size: 1em;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff7e9;
+    }
+  }
+
+  .copyright {
+    flex-basis: 100%;
+    text-align: justify;
+    background-color: #fff7e9;
+    display: flex;
+    color: #1746a2;
+    font-size: 0.8em;
+
+    .copy {
+      display: inline-block;
+
+      a {
+        color: hsl(0, 0%, 35%);
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// Estilos para los modales
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: $bg-blue;
+  color: hsl(0, 0%, 85%);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 90%;
+  max-width: 75%;
+  position: relative;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: medium;
+    color: #fcd900;
+  }
+
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+}
+
+.close {
+  text-align: end;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
