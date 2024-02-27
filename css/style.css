@@ -239,19 +239,14 @@ footer .copyright .copy a {
     font-size: 12px;
     margin: 5px;
   }
-  footer .modal-content {
-    margin: 15% 5%;
-    width: 75%;
-    max-width: 75%;
-  }
   .modal-content {
     background-color: #1746a2;
     color: hsl(0, 0%, 85%);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid black;
-    width: 75%;
-    max-width: 75%;
+    width: auto;
+    max-width: 85%;
     position: relative;
   }
   .modal-content .modal-link {
@@ -279,8 +274,9 @@ footer .copyright .copy a {
   .section-c .article-b,
   .section-c .article-c,
   .section-c .article-d {
-    width: calc(100% - 20px);
-    margin: 10px;
+    width: calc(50% - 20px);
+    margin-top: 5px;
+    margin-bottom: 5px;
     height: 150px;
   }
   .btn-lg {
@@ -370,7 +366,7 @@ section-carrusel slide {
 }
 .section-c .article {
   width: 25em;
-  margin: 0 3px;
+  margin: 5px 3px 5px 3px;
 }
 .section-c .article.article-a {
   background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../img/img1.png");
@@ -598,11 +594,7 @@ section-carrusel slide {
 }
 
 .btn-lg {
-  height: 40px;
-  text-align: center;
-  cursor: pointer;
   transition: left 0.4s ease;
-  border: none;
   text-decoration: underline;
   background-color: white;
 }
@@ -610,16 +602,13 @@ section-carrusel slide {
 .custom-btn {
   border-radius: 20px;
   background: #fb8b24;
-  border: 1px solid transparent;
   color: #fff7e9;
-  height: 40px;
   width: 100vh;
   font-style: bold;
   font-size: 16px;
 }
 
 .button {
-  text-align: center;
   width: 300px;
   margin: 0 auto;
   margin-top: 2em;
@@ -646,16 +635,15 @@ section-carrusel slide {
   padding: 10px;
   border-radius: 25px;
   font-weight: normal;
-  border: 0;
   text-decoration: none;
-  text-align: center;
+  font-size: 16px;
 }
 .buttons:hover {
   background-color: black;
   text-align: center;
 }
 
-.article-base, .section-c .article, .about-us .article-e,
+.section-c .article, .about-us .article-e,
 .about-us .article-f,
 .about-us .article-g {
   background-repeat: no-repeat;
@@ -666,6 +654,13 @@ section-carrusel slide {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.btn-lg, .custom-btn, .button, .buttons {
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
 }
 
 .product-card {

@@ -1,5 +1,5 @@
 // Uso del extends para establecer articles-base
-.article-base {
+%article-base {
     background-repeat: no-repeat;
     border-radius: 5px;
     background-size: cover;
@@ -10,5 +10,10 @@
     justify-content: center;
 }
 
-
-
+// Uso del extends para establecer button-base
+%button-base {
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
