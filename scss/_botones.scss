@@ -1,26 +1,22 @@
 .btn-lg {
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
+    @extend %button-base;
     transition: left 0.4s ease;
-    border: none;
     text-decoration: underline;
     background-color: white;
 }
 
 .custom-btn {
+    @extend %button-base;
     border-radius: 20px;
     background: $bg-orange;
-    border: 1px solid transparent;
     color: #fff7e9;
-    height: 40px;
     width: 100vh;
     font-style: bold;
     font-size: 16px;
 }
 
 .button {
-    text-align: center;
+    @extend %button-base;
     width: 300px;
     margin: 0 auto;
     margin-top: 2em;
@@ -44,14 +40,14 @@
 }
 
 .buttons {
+    @extend %button-base;
     background-color: #1746a2;
     color: #fff7e9;
     padding: 10px;
     border-radius: 25px;
     font-weight: normal;
-    border: 0;
     text-decoration: none;
-    text-align: center;
+    font-size: 16px;
 
     &:hover {
         background-color: $bg-black;

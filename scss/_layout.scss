@@ -62,9 +62,9 @@ section-carrusel {
     font-size: 20px;
 
     .article {
-            @extend .article-base;
+            @extend %article-base;
             width: 25em;
-            margin: 0 3px;
+            margin: 5px 3px 5px 3px;
 
         &.article-a {
             background-image: linear-gradient(rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../img/img1.png");
@@ -112,7 +112,7 @@ section-carrusel {
     .article-e,
     .article-f,
     .article-g {
-        @extend .article-base;
+        @extend %article-base;
         background-color: hsl(0, 0%, 90%);
         flex: 1;
         max-width: 400px;
