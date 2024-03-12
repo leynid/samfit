@@ -1,25 +1,31 @@
 // Media query para PC
 @media screen and (min-width: 768px) {
     header {
-        .abrir-menu,
-        .cerrar-menu {
-            display: none;
-            // Oculta el botón de abrir y cerrar en pantallas grandes //
+    
+            .abrir-menu,
+            .cerrar-menu {
+                display: none;
+                // Oculta el botón de abrir y cerrar en pantallas grandes //
+            }
+    
+            .nav {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 95%;
+            }
+    
+            .nav-link {
+                justify-content: flex-end;
+                width: 95%;
+                gap: 15px;
+            }
         }
-
-        .nav {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            width: 95%;
+    
+        .contactanos {
+            width: 50%;
+            margin: 0 auto;
         }
-
-        .nav-link {
-            justify-content: flex-end;
-            width: 95%;
-            gap: 15px;
-        }
-    }
 }
 
 // Media query para Responsive
