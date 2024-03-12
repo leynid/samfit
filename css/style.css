@@ -36,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fb8b24;
+  background: linear-gradient(to top, #fb8b24, #f8a619);
   padding: 20px;
   margin-bottom: 10px;
 }
@@ -69,7 +69,7 @@ header .nav-link li a:hover {
 }
 
 footer {
-  background-color: #1746a2;
+  background: linear-gradient(to bottom, #1746a2, #00213d);
   display: flex;
   margin-top: 15px;
   justify-content: space-around;
@@ -77,7 +77,7 @@ footer {
   flex-wrap: wrap;
 }
 footer .redes li {
-  background-color: #1746a2;
+  background-color: transparent;
   text-align: center;
   list-style-type: none;
   margin-bottom: 5px;
@@ -125,7 +125,6 @@ footer .copyright .link-defensa a {
 }
 
 .modal {
-  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -134,6 +133,13 @@ footer .copyright .link-defensa a {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.active {
+  display: block;
+  opacity: 1;
 }
 
 .modal-content {
@@ -173,6 +179,17 @@ footer .copyright .link-defensa a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.close.fadeOut {
+  animation: fadeOutModal 0.5s ease forwards;
+}
+@keyframes fadeOutModal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 section-carrusel {
@@ -265,12 +282,13 @@ section-carrusel slide {
 .about-us .article-e,
 .about-us .article-f,
 .about-us .article-g {
-  background-color: hsl(0, 0%, 90%);
+  background: radial-gradient(circle, #eaeaea, #a6a6a6);
   flex: 1;
   max-width: 400px;
   margin: 10px;
   padding: 20px;
   box-sizing: border-box;
+  transition: transform 0.3s ease;
 }
 .about-us .article-e .parrafo-2,
 .about-us .article-f .parrafo-2,
@@ -286,6 +304,11 @@ section-carrusel slide {
 .about-us .article-g p {
   text-align: center;
 }
+.about-us .article-e:hover,
+.about-us .article-f:hover,
+.about-us .article-g:hover {
+  transform: scale(1.1);
+}
 
 .menu-bar {
   justify-content: space-between;
@@ -298,7 +321,7 @@ section-carrusel slide {
 }
 
 .type-product {
-  background-color: #fb8b24;
+  background: linear-gradient(to left, #fb8b24, #f8a619);
   font-size: 22px;
   color: #fff7e9;
   height: 50px;
@@ -328,7 +351,7 @@ section-carrusel slide {
   letter-spacing: 1px;
 }
 .sidebar ul {
-  background: #1746a2;
+  background: linear-gradient(to bottom, #1746a2, #00213d);
   height: 100%;
   width: 100%;
   list-style: none;

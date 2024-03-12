@@ -1,6 +1,6 @@
 // Formato del Footer
 footer {
-  background-color: $bg-blue;
+  background: linear-gradient(to bottom, $colorblue1, $colorblue2);
   display: flex;
   margin-top: 15px;
   justify-content: space-around;
@@ -8,7 +8,7 @@ footer {
   flex-wrap: wrap;
 
   .redes li {
-    background-color: $bg-blue;
+    background-color: transparent;
     text-align: center;
     list-style-type: none;
     margin-bottom: 5px;
@@ -66,7 +66,7 @@ footer {
 
 // Estilos para los modales
 .modal {
-  display: none;
+
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -75,6 +75,13 @@ footer {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.active {
+  display: block;
+  opacity: 1; 
 }
 
 .modal-content {
@@ -119,4 +126,18 @@ footer {
     text-decoration: none;
     cursor: pointer;
   }
+
+  &.fadeOut {
+    animation: fadeOutModal 0.5s ease forwards;
+  }
+
+  @keyframes fadeOutModal {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 }
+
