@@ -113,12 +113,13 @@ section-carrusel {
     .article-f,
     .article-g {
         @extend %article-base;
-        background-color: hsl(0, 0%, 90%);
+        background: radial-gradient(circle, $colorgray1, $colorgray2);
         flex: 1;
         max-width: 400px;
         margin: 10px;
         padding: 20px;
         box-sizing: border-box;
+        transition: transform 0.3s ease;
 
         .parrafo-2 {
             font-size: 1.5rem;
@@ -130,6 +131,10 @@ section-carrusel {
 
         p {
             text-align: center;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -148,7 +153,7 @@ section-carrusel {
 
 // Botón y Menú
 .type-product {
-    background-color: $bg-orange;
+    background: linear-gradient(to left, $colororange1, $colororange2);
     font-size: 22px;
     color: #fff7e9;
     height: 50px;
@@ -180,7 +185,7 @@ section-carrusel {
     }
 
     ul {
-        background: #1746a2;
+        background: linear-gradient(to bottom, $colorblue1, $colorblue2);
         height: 100%;
         width: 100%;
         list-style: none;

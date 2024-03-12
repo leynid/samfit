@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Nosotros</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">"
+        <link rel="stylesheet" href="../css/style.css">
+    <title>SAMFIT.AR</title>
 </head>
 
 <body>
@@ -72,7 +73,7 @@
 
         <section class="about-us">
             <article class="article-e">
-                <h3 class="parrafo-2">Misión Visión y Valores</h3>
+                <h3 class="parrafo-2">Misión, Visión y Valores</h3>
                 <p>
                     Nuestra misión es proporcionar productos de calidad que inspiren y faciliten la práctica deportiva,
                     nuestra visión es ser reconocidos como líderes en el mercado deportivo, y nuestros valores se
@@ -81,7 +82,7 @@
             </article>
 
             <article class="article-f">
-                <h3 class="parrafo-2">Por Que Elegirnos?</h3>
+                <h3 class="parrafo-2">Por Qué Elegirnos?</h3>
                 <p>
                     En nuestra tienda, ofrecemos una amplia gama de productos de alta calidad y un servicio al cliente
                     excepcional. Trabajamos con las mejores marcas para garantizar la calidad y durabilidad de nuestros
@@ -430,23 +431,33 @@
             });
         });
     </script>
-
-        <!-- SCRIPT VENTANA EMERGENTE -->
-        <script>
-            // Función para abrir la ventana emergente
-            function openModal(modalId) {
-                var modal = document.getElementById(modalId);
-                modal.style.display = "block";
-            }
     
-            // Función para cerrar la ventana emergente
-            function closeModal(modalId) {
-                var modal = document.getElementById(modalId);
+    <!-- SCRIPT VENTANA EMERGENTE -->
+    <script>
+        // Función para abrir la ventana emergente
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+            setTimeout(function () {
+                modal.classList.add("active");
+            }, 20);
+        }
+
+        // Función para cerrar la ventana emergente
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.classList.remove("active");
+            setTimeout(function () {
                 modal.style.display = "none";
-            }
-        </script>
-        
-    </footer>
+            }, 500);
+        }
+    </script>
+      
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>

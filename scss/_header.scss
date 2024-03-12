@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $bg-orange;
+    background: linear-gradient(to top, $colororange1, $colororange2);
     padding: 20px;
     margin-bottom: 10px;
 

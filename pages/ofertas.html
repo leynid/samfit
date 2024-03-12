@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">"
     <link rel="stylesheet" href="../css/style.css">
     <title>Ofertas</title>
 </head>
@@ -356,14 +357,26 @@
         function openModal(modalId) {
             var modal = document.getElementById(modalId);
             modal.style.display = "block";
+            setTimeout(function () {
+                modal.classList.add("active");
+            }, 20);
         }
 
         // Función para cerrar la ventana emergente
         function closeModal(modalId) {
             var modal = document.getElementById(modalId);
-            modal.style.display = "none";
+            modal.classList.remove("active");
+            setTimeout(function () {
+                modal.style.display = "none";
+            }, 500);
         }
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>
