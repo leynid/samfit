@@ -44,6 +44,7 @@ header {
 
         .carrito-link {
             cursor: pointer;
+            position: relative;
             font-size: 1.8rem;
             color:#1746a2;
             margin-left: 15px;
@@ -54,6 +55,20 @@ header {
                 color: black;
             }
         }
+        
+        #contador-carrito {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: $bg-blue;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
-
 }
