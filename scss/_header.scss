@@ -6,6 +6,7 @@ header {
     background: linear-gradient(to top, $colororange1, $colororange2);
     padding: 20px;
     margin-bottom: 10px;
+    position: relative;
 
     .logo-container {
         margin-left: 2em;
@@ -27,6 +28,7 @@ header {
         justify-content: flex-end;
         padding: 0;
         margin: 0;
+        align-items: center;
 
         li a {
             text-decoration: none;
@@ -39,5 +41,19 @@ header {
                 color: black;
             }
         }
+
+        .carrito-link {
+            cursor: pointer;
+            font-size: 1.8rem;
+            color:#1746a2;
+            margin-left: 15px;
+            font-weight: bold;
+            stroke-width: 3;
+
+            &:hover {
+                color: black;
+            }
+        }
     }
+
 }
