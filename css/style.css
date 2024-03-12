@@ -462,10 +462,6 @@ section-carrusel slide {
 .contactanos {
   margin-bottom: 60px;
 }
-.contactanos form {
-  width: 50%;
-  margin: 0 auto;
-}
 .contactanos .form-control {
   border: 2px solid rgba(167, 165, 165, 0.6);
 }
@@ -535,6 +531,10 @@ section-carrusel slide {
     justify-content: flex-end;
     width: 95%;
     gap: 15px;
+  }
+  .contactanos {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
