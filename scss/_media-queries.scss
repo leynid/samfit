@@ -150,19 +150,13 @@
 
     .section-c {
         overflow-y: auto;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        font-size: 15px;
         max-height: calc(100vh - 100px);
 
         .article-a,
         .article-b,
         .article-c,
         .article-d {
-            width: calc(50% - 20px);
-            margin-top: 5px;
-            margin-bottom: 5px;
             height: 150px;
         }
     }
@@ -212,3 +206,10 @@
         }
     }  
 }
+
+    // Para Contacto
+    .contactanos form {
+        width: 100%;
+        margin: 0;
+    }
+
