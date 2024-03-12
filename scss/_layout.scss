@@ -105,7 +105,7 @@ section-carrusel {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     font-size: 1rem;
     padding: 20px;
 
@@ -274,8 +274,8 @@ section-carrusel {
     margin: 1rem;
 
     h1 {
+        text-align: center;
         font-size: 30px;
-        text-align: justify;
         color: #1746a2;
         font-weight: bold;
 
@@ -283,6 +283,13 @@ section-carrusel {
             padding-top: 1em;
             margin-bottom: 1em;
         }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #1746a2;
+        font-weight: bold;
     }
 
     .container-fluid .row {
@@ -310,3 +317,22 @@ section-carrusel {
         }
     }
 }
+
+.contactanos {
+
+    margin-bottom: 60px;
+
+    form {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        border: 2px solid rgb(167, 165, 165, 0.6);
+    }
+
+}
+
+
+
+
