@@ -127,14 +127,14 @@
         }
       
         .modal-content {
-          background-color: $bg-blue;
-          color: hsl(0, 0%, 85%);
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid black;
-          width: auto;
-          max-width: 85%;
-          position: relative;
+            background: $colorgray1;
+            color: $bg-black;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid black;
+            width: auto;
+            max-width: 75%;
+            position: relative;
            
           .modal-link {
             display: block;

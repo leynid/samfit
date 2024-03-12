@@ -85,29 +85,32 @@ footer {
 }
 
 .modal-content {
-  background-color: $bg-blue;
-  color: hsl(0, 0%, 85%);
+  background: $colorgray1;
+  color: $bg-black;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid black;
-  width: 90%;
-  max-width: 75%;
+  width: 70%;
+  max-width: 50%;
   position: relative;
 
   h2 {
+    font-size: large;
     font-weight: bold;
+    color: $bg-blue;
     margin-bottom: 20px;
   }
 
   h4 {
+    font-size: medium;
     font-style: italic;
     text-decoration: underline;
     margin-bottom: 20px;
-    font-size: medium;
-    color: #fcd900;
+    color: $bg-blue;
   }
 
   p {
+    font-size: medium;
     margin-bottom: 15px;
     text-align: justify;
   }
