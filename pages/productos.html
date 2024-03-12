@@ -26,7 +26,10 @@
                 <li><a href="../pages/productos.html?category=ofertas">Ofertas</a></li>
                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li class="carrito-link"><i class="bi bi-cart2"></i></li>
+                <li class="carrito-link">
+                    <i class="bi bi-cart2"></i>
+                    <span id="contador-carrito">0</span>
+                </li>
             </ul>
         </nav>
     </header>
@@ -1490,7 +1493,36 @@
         });
     </script>
 
+    <!-- SCRIPT ARRAY CARRITO  -->
+    <script>
+        let carrito = [];
 
+        // Función para escuchar los clics en los botones "Comprar"
+        document.querySelectorAll('.custom-btn').forEach(boton => {
+            boton.addEventListener('click', (event) => {
+                event.preventDefault(); // Evitar que el botón envíe el formulario
+
+                // Obtener la información del producto seleccionado
+                let producto = {
+                    nombre: boton.closest('.product-item').querySelector('.product-name p:nth-child(2)').textContent.trim(),
+                    precio: boton.closest('.product-item').querySelector('.new-price').textContent.trim(),
+                };
+
+                // Agregar el producto al carrito
+                carrito.push(producto);
+
+                // Actualizar visualmente el contador del carrito
+                actualizarContadorCarrito();
+            });
+        });
+
+        // Función para actualizar visualmente el contador del carrito
+        function actualizarContadorCarrito() {
+            let contador = document.getElementById('contador-carrito');
+            contador.textContent = carrito.length;
+        }
+    </script>
+    
     <!-- SCRIPT VENTANA EMERGENTE -->
     <script>
         // Función para abrir la ventana emergente
@@ -1515,8 +1547,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
-
-</body>
+    </script>
+    
+    </body>
 
 </html>
