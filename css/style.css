@@ -641,11 +641,12 @@ section-carrusel slide {
   }
   footer .redes {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
   }
   footer .redes ul {
+    flex-direction: row;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -662,6 +663,7 @@ section-carrusel slide {
   footer .terminos {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     width: 100%;
     margin-top: 20px;
