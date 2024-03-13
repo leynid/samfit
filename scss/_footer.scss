@@ -2,49 +2,59 @@
 footer {
   background: linear-gradient(to bottom, $colorblue1, $colorblue2);
   display: flex;
-  margin-top: 15px;
   justify-content: space-around;
   color: #fff7e9;
   flex-wrap: wrap;
+  align-items: center;
+  
+  .redes ul,
+  .preguntas,
+  .terminos {
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 1em;
+    color: $colorgray2;
+    cursor: pointer;
+    align-items: center;
+  }
 
   .redes li {
     background-color: transparent;
-    text-align: center;
     list-style-type: none;
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    cursor: pointer;
+    margin-bottom: 6px;
 
     a {
-      color: hsl(0, 0%, 75%);
+      font-size: 1.5em;
+      color: $colorgray2;
 
       &:hover {
-        color: #fff7e9;
+        color: $bg-white;
       }
     }
 
     &:hover {
-      color: #fff7e9;
+      color: $bg-white;
     }
   }
 
   .terminos,
   .preguntas {
-    color: hsl(0, 0%, 75%);
-    font-size: 1em;
-    cursor: pointer;
 
     &:hover {
-      color: #fff7e9;
+      color: $bg-white;
     }
   }
 
   .copyright {
     flex-basis: 100%;
-    background-color: #fff7e9;
+    background-color: $bg-white;
     display: flex;
     flex-direction: column;
-    color: #1746a2;
+    color: $bg-blue;
     font-size: 0.8em;
 
     .copy {
@@ -57,7 +67,7 @@ footer {
       margin-top: 2px;
 
       a {
-        color: hsl(0, 0%, 35%);
+        color: $colorgray2;
         font-size: 0.9em;
       }
     }
