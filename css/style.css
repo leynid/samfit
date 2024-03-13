@@ -28,7 +28,7 @@
 .product-card {
   border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #fff;
 }
 
@@ -99,33 +99,39 @@ header .nav-link #contador-carrito {
 footer {
   background: linear-gradient(to bottom, #1746a2, #00213d);
   display: flex;
-  margin-top: 15px;
   justify-content: space-around;
   color: #fff7e9;
   flex-wrap: wrap;
+  align-items: center;
+}
+footer .redes ul,
+footer .preguntas,
+footer .terminos {
+  display: flex;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 1em;
+  color: #a6a6a6;
+  cursor: pointer;
+  align-items: center;
 }
 footer .redes li {
   background-color: transparent;
-  text-align: center;
   list-style-type: none;
-  margin-bottom: 5px;
-  font-size: 1.5em;
-  cursor: pointer;
+  margin-bottom: 6px;
 }
 footer .redes li a {
-  color: hsl(0, 0%, 75%);
+  font-size: 1.5em;
+  color: #a6a6a6;
 }
 footer .redes li a:hover {
   color: #fff7e9;
 }
 footer .redes li:hover {
   color: #fff7e9;
-}
-footer .terminos,
-footer .preguntas {
-  color: hsl(0, 0%, 75%);
-  font-size: 1em;
-  cursor: pointer;
 }
 footer .terminos:hover,
 footer .preguntas:hover {
@@ -148,7 +154,7 @@ footer .copyright .link-defensa {
   margin-top: 2px;
 }
 footer .copyright .link-defensa a {
-  color: hsl(0, 0%, 35%);
+  color: #a6a6a6;
   font-size: 0.9em;
 }
 
